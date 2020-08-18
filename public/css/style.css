@@ -23,4 +23,10 @@ p {
 
 .body-bg-black {
   background-color: #000;
+  background-image: url('https://giffiles.alphacoders.com/168/168972.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
 }
+

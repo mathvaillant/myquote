@@ -1,5 +1,6 @@
 <h6>Dashboard</h6>
-<h3>Welcome {{name}}</h3>
+<h3>Welcome {{name}} <img style="width: 5rem; border-radius: 50%; border: 1px solid rgba(0, 0, 255, 0.459); " src="{{image}}" alt=""></h3>
+
 <p>Here are your latest quotes</p>
 {{#if quotes}}
   <table class="striped">
@@ -21,7 +22,7 @@
             <a href="/quotes/edit/{{_id}}" class="btn btn-float">
               <i class="fas fa-edit"></i>
             </a>
-            <form action="/stories/{{_id}}" method="POST" id="delete-form">
+            <form action="/quotes/{{_id}}" method="POST" id="delete-form">
               <input type="hidden" name="_method" value="DELETE">
               <button type="submit" class="btn red">
                 <i class="fas fa-trash"></i>

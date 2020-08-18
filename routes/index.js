@@ -20,6 +20,7 @@ router.get('/dashboard', ensureAuth, async (req, res) => {
     // Second param is the content accessible by {{}}
     res.render('dashboard', {
     name: req.user.firstName,
+    image: req.user.image,
     quotes
   })
   } catch(err) {

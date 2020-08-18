@@ -2,7 +2,15 @@
 <div class="row">
   {{#each quotes}}
     <div class="col s12 m4">
-      <div class="card">
+      
+      <div class="card" style="display: flex; flex-direction: column; margin: 1rem">
+        <span>
+          <img 
+          style="position: relative; top: -1rem; left: -1rem;"
+          src="../../quote left.png" 
+          alt="quote left"
+          >
+        </span>
         <div class="card-image">
           {{{editIcon user ../user _id}}}
         </div>
@@ -16,8 +24,15 @@
           </div>
         </div>
         <div class="card-action center-align">
-          <a href="/quotes/{{_id}}" class="btn grey">Read More</a>
+          <a href="/quotes/{{_id}}" class="btn red">Read More</a>
         </div>
+        <span style="display: flex; justify-content: flex-end;">
+          <img 
+          style="position: relative; bottom: -1rem; right: -1rem;"
+          src="../../quote right.png" 
+          alt="quote left"
+          >
+        </span>
       </div>
     </div>
   {{else}}
